@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sample Static Website</title>
+  <link rel="stylesheet" href="archer.css"/>
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Lora&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Archers Network</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#photos">Photos</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </nav>
+
+
+  <header id="home" class="hero moving-bg">
+    <h1 id="hero-title"></h1>
+    <p id="hero-subtext" class="hidden">Sample Static Website</p>
+  </header>
+
+
+        <section id="photos" class="gallery-section">
+        <h2 id="gallery-title"></h2>
+
+        <div class="gallery-wrapper">
+            <button class="scroll-btn left" id="scrollLeft">&#10094;</button>
+            <div class="gallery-scroll" id="gallery">
+            <img src="https://picsum.photos/400/300?random=1" alt="Sample photo 1">
+            <img src="https://picsum.photos/400/500?random=2" alt="Sample photo 2">
+            <img src="https://picsum.photos/400/350?random=3" alt="Sample photo 3">
+            <img src="https://picsum.photos/400/450?random=4" alt="Sample photo 4">
+            <img src="https://picsum.photos/400/300?random=5" alt="Sample photo 5">
+            <img src="https://picsum.photos/400/400?random=6" alt="Sample photo 6">
+            <img src="https://picsum.photos/400/600?random=7" alt="Sample photo 7">
+            <img src="https://picsum.photos/400/600?random=8" alt="Sample photo 8">
+            <img src="https://picsum.photos/400/600?random=9" alt="Sample photo 9">
+            </div>
+            <button class="scroll-btn right" id="scrollRight">&#10095;</button>
+        </div>
+        </section>
+
+
+    <section id="videos" class="video-section fade-in">
+    <h2>Featured Videos</h2>
+    <div class="video-grid">
+        <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="YouTube video 1" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4"
+            title="YouTube video 2" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"
+            title="YouTube video 3" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    </section>
+
+
+  <section id="about" class="about fade-in">
+    <h2>About This Project</h2>
+    <p>
+      This is a sample static website created with just one HTML, JavaScript and CSS file.
+      Smooth scrolling and scroll-triggered animations were added to make it feel interactive.
+    </p>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 MySite | Built using HTML JavaScript & CSS</p>
+  </footer>
+</body>
+</html>
